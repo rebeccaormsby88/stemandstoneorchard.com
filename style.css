@@ -14,7 +14,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
-* { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
@@ -35,41 +34,58 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
 .skip-link:focus { top: 1rem; }
 
 .site-header {
-  position: relative; z-index: 20;
-  background: rgba(255,253,248,.98);
-  border-bottom: 1px solid rgba(23,63,43,.2);
-.header-inner {
-    width: 100%;
-    max-width: var(--max);
-    min-height: 116px;
-    margin: 0 auto;
-    padding: 8px 0px;
-    display: flex;
-    align-items: center;
-    gap: 2px;
+  position: relative;
+  z-index: 20;
+  background: rgba(255, 253, 248, 0.98);
+  border-bottom: 1px solid rgba(23, 63, 43, 0.2);
 }
-.brand {
-    flex: 0 0 auto;
-}
-.brand img {
-    width: 390px;
-    height: auto;
-    display: block;
-}
-.site-nav {
-    margin-left: auto;
-    flex: 0 0 auto;
-}
-.nav-list {
-    display: flex;
-    list-style: none;
-    gap: 28px;
-    margin: 0;
-    padding: 0;
-}
-.nav-list a { display: block; padding: 12px 15px; text-decoration: none; font-weight: 700; border-radius: 8px; }
-.nav-list a:hover, .nav-list a[aria-current="page"] { background: #e5eee7; }
 
+.header-inner {
+  width: 100%;
+  max-width: var(--max);
+  min-height: 116px;
+  margin: 0 auto;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.brand {
+  flex: 0 0 auto;
+}
+
+.brand img {
+  width: 390px;
+  height: auto;
+  display: block;
+}
+
+.site-nav {
+  margin-left: auto;
+  flex: 0 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  display: block;
+  padding: 12px 15px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.nav-list a:hover,
+.nav-list a[aria-current="page"] {
+  background: #e5eee7;
+}
 .hero {
   min-height: 690px;
   background-image: url('orchard-in-bloom.jpg');
