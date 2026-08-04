@@ -39,7 +39,7 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
 .header-inner {
 width: 100%;
 max-width: var(--max);
-min-height: 116px;
+min-height: 97px;
 margin: 0 auto;
 padding: 8px 24px;
 box-sizing: border-box;
