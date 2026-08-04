@@ -43,10 +43,10 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
     max-width: var(--max);
     min-height: 116px;
     margin: 0 auto;
-    padding: 8px 24px;
+    padding: 8px 0px;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 2px;
 }
 .brand {
     flex: 0 0 auto;
