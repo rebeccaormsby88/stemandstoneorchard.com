@@ -11,7 +11,9 @@
   --radius: 18px;
   --max: 1180px;
 }
-
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -44,6 +46,7 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
     padding: 8px 24px;
     display: flex;
     align-items: center;
+    gap: 24px;
 }
 .brand {
     flex: 0 0 auto;
@@ -55,6 +58,7 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
 }
 .site-nav {
     margin-left: auto;
+    flex: 0 0 auto;
 }
 .nav-list {
     display: flex;
@@ -68,7 +72,7 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
 
 .hero {
   min-height: 690px;
-  background-image: linear-gradient(90deg, rgba(7,25,15,.82) 0%, rgba(7,25,15,.55) 48%, rgba(7,25,15,.12) 100%), url('orchard-in-bloom.jpg');
+  background-image: url('orchard-in-bloom.jpg');
   background-size: cover; background-position: center;
   display: grid; align-items: center;
   padding: 50px 24px;
