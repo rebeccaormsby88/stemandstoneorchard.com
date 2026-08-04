@@ -41,7 +41,7 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
   max-width: var(--max); margin: auto; min-height: 116px; padding: 12px 24px;
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
 }
-.brand img { height: 100px; width: auto; object-fit: contain; object-position: left center; }
+.brand img { height: 100px; width: auto; display: block; }
 .nav-list { display: flex; list-style: none; gap: 10px; margin: 0; padding: 0; }
 .nav-list a { display: block; padding: 12px 15px; text-decoration: none; font-weight: 700; border-radius: 8px; }
 .nav-list a:hover, .nav-list a[aria-current="page"] { background: #e5eee7; }
