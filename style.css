@@ -38,8 +38,8 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
   border-bottom: 1px solid rgba(23,63,43,.2);
 }
 .header-inner {
-  max-width: var(--max); margin: auto; padding: 0px 0px;
-  display: flex; align-items: center; justify-content: max-height: 100px; space-between; gap: 0px;
+  max-width: var(--max); max-height: 100px; margin: auto; padding: 0px 0px;
+  display: flex; align-items: center; justify-content: space-between; gap: 0px;
 }
 .brand img { height: 100px; width: auto; display: block; }
 .nav-list { display: flex; list-style: none; gap: 10px; margin: 0; padding: 0; }
