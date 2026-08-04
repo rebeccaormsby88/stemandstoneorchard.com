@@ -38,7 +38,7 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
   border-bottom: 1px solid rgba(23,63,43,.2);
 }
 .header-inner {
-  max-width: var(--max); margin: auto; min-height: 124px; padding: 10px 10px;
+  max-width: var(--max); margin: auto; min-height: 55px; padding: 10px 10px;
   display: flex; align-items: center; justify-content: space-between; gap: 10px;
 }
 .brand img { height: 100px; width: auto; display: block; }
