@@ -49,7 +49,7 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
     gap: 24px;
 }
 .brand img {
-    width: 420px;
+    width: 380px;
     height: auto;
     display: block;
 }
