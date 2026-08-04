@@ -38,16 +38,14 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
   z-index: 20;
   background: rgba(255, 253, 248, 0.98);
   border-bottom: 1px solid rgba(23, 63, 43, 0.2);
-}
+} /* This brace must be here */
 
 .header-inner {
   width: 100%;
   max-width: var(--max);
   min-height: 116px;
   margin: 0 auto;
-  padding: 8px 24px;
-  display: flex;
-  align-items: center;
+  padding: 8px 0;
 }
 
 .brand {
