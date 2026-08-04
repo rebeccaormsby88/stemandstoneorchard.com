@@ -56,7 +56,7 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
 }
 
 .brand img {
-  width: 200px;
+  width: 222px;
   height: auto;
   display: block;
 }
@@ -88,13 +88,27 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
 }
 .hero {
   min-height: 690px;
-  background-image: url('orchard-in-bloom.jpg');
-  background-size: cover; background-position: center;
-  display: grid; align-items: center;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(7,25,15,.82) 0%,
+      rgba(7,25,15,.55) 48%,
+      rgba(7,25,15,.18) 100%
+    ),
+    url("orchard-in-bloom.jpg");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  align-items: center;
   padding: 50px 24px;
 }
 .hero-inner { width: min(var(--max), 100%); margin: auto; }
-.hero-copy { color: white; max-width: 720px; text-shadow: 0 2px 10px rgba(0,0,0,.45); }
+.hero-copy {
+    color: white;
+    max-width: 720px;
+    text-shadow: 0 2px 10px rgba(0,0,0,.45);
+    padding-top: 30px;
+}
 .eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: 16px; font-weight: 800; }
 h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; line-height: 1.12; color: var(--forest); }
 h1 { margin: 10px 0 16px; color: white; font-size: clamp(46px, 6vw, 76px); max-width: 760px; }
