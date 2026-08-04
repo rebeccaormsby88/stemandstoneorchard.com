@@ -42,14 +42,14 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
     max-width: var(--max);
     min-height: 116px;
     margin: 0 auto;
-    padding: 8px 24px;
+    padding: 8px 8px;
 
     display: flex;
     align-items: center;
     gap: 24px;
 }
 .brand img {
-    width: 390px;
+    width: 500px;
     height: auto;
     display: block;
 }
