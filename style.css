@@ -37,26 +37,21 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
   background: rgba(255,253,248,.98);
   border-bottom: 1px solid rgba(23,63,43,.2);
 .header-inner {
-width: 100%;
-max-width: var(--max);
-min-height: 97px;
-margin: 0 auto;
-padding: 8px 24px;
-box-sizing: border-box;
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 24px;
+    width: 100%;
+    max-width: var(--max);
+    min-height: 116px;
+    margin: 0 auto;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
 }
 .brand {
-flex: 1 1 auto;
-min-width: 0;
+    flex: 0 0 auto;
 }
 .brand img {
-display: block;
-width: 100%;
-max-width: 390px;
-height: auto;
+    width: 390px;
+    height: auto;
+    display: block;
 }
 .site-nav {
     margin-left: auto;
@@ -67,14 +62,6 @@ height: auto;
     gap: 28px;
     margin: 0;
     padding: 0;
-}
-.nav-list {
-display: flex;
-flex: 0 0 auto;
-list-style: none;
-gap: 10px;
-margin: 0;
-padding: 0;
 }
 .nav-list a { display: block; padding: 12px 15px; text-decoration: none; font-weight: 700; border-radius: 8px; }
 .nav-list a:hover, .nav-list a[aria-current="page"] { background: #e5eee7; }
