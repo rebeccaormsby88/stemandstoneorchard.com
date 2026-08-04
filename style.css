@@ -56,7 +56,7 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
 }
 
 .brand img {
-  width: 390px;
+  width: 200px;
   height: auto;
   display: block;
 }
