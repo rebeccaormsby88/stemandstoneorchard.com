@@ -205,13 +205,6 @@ h1 { margin: 10px 0 16px; color: white; font-size: clamp(46px, 6vw, 76px); max-w
   opacity: 0.9;
 }
 
-.footer-description p {
-  max-width: 260px;
-  margin: 0;
-  font-size: 17px;
-  line-height: 1.5;
-}
-
 .site-footer h2 {
   margin: 0 0 12px;
   color: white;
@@ -399,10 +392,6 @@ h1 { margin: 10px 0 16px; color: white; font-size: clamp(46px, 6vw, 76px); max-w
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 44px;
-  }
-
-  .footer-description p {
-    max-width: none;
   }
 
   .footer-logo {
