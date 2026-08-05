@@ -41,33 +41,39 @@ a:focus-visible, button:focus-visible { outline: 4px solid #f2c84b; outline-offs
 } /* This brace must be here */
 
 .header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+
   width: 100%;
   max-width: var(--max);
   min-height: 116px;
   margin: 0 auto;
-  padding: 8px 0;
+  padding: 8px 24px;
 }
-
 .brand {
+  display: block;
   flex: 0 0 auto;
 }
-
 .brand img {
+  display: block;
   width: 222px;
   height: auto;
-  display: block;
 }
 
 .site-nav {
+  flex: 0 0 auto;
   margin-left: auto;
 }
-
 .nav-list {
   display: flex;
-  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
   gap: 28px;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .nav-list a {
@@ -177,8 +183,24 @@ h1 { margin: 10px 0 16px; color: white; font-size: clamp(46px, 6vw, 76px); max-w
 .copyright { max-width: var(--max); margin: 35px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.3); font-size: 16px; }
 
 @media (max-width: 900px) {
-  .header-inner { flex-direction: column; min-height: auto; }
-  .brand img { width: 280px; height: 74px; }
+  .header-inner {
+    min-height: 100px;
+    padding: 8px 20px;
+    gap: 20px;
+  }
+
+  .brand img {
+    width: 200px;
+    height: auto;
+  }
+
+  .nav-list {
+    gap: 14px;
+  }
+
+  .nav-list a {
+    padding: 10px 12px;
+  }
   .harvest-panel { grid-template-columns: 1fr 1fr; }
   .harvest-item:nth-child(2) { border-right: 0; }
   .harvest-item { border-bottom: 1px solid var(--line); }
@@ -190,11 +212,38 @@ h1 { margin: 10px 0 16px; color: white; font-size: clamp(46px, 6vw, 76px); max-w
 
 @media (max-width: 620px) {
   body { font-size: 17px; }
-  .header-inner { align-items: stretch; padding: 8px 16px 12px; gap: 4px; }
-  .brand { text-align: center; }
-  .brand img { margin: auto; width: 250px; height: 70px; }
-  .nav-list { justify-content: center; }
-  .nav-list a { padding: 10px 12px; font-size: 16px; }
+   .header-inner {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    padding: 8px 16px 12px;
+    gap: 4px;
+  }
+
+  .brand {
+    text-align: center;
+  }
+
+  .brand img {
+    width: 250px;
+    height: auto;
+    margin: auto;
+  }
+
+  .site-nav {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .nav-list {
+    justify-content: center;
+  }
+
+  .nav-list a {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+}
   .hero { min-height: 0; padding: 46px 16px 26px; background-position: 38% center; }
   h1 { font-size: 43px; }
   .hero-copy p { font-size: 19px; }
