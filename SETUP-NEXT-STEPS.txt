@@ -1,0 +1,9 @@
+Stem & Stone Orchard website — updated files
+
+Contact Us form endpoint is configured: https://formspree.io/f/maeqzlrj
+Confirm your Formspree account has verified hello@stemandstoneorchard.com and enabled email notifications.
+
+The optional marketing checkbox is recorded in Formspree as marketing_opt_in=yes when selected.
+IMPORTANT: This does NOT automatically subscribe the visitor in Brevo. Review Formspree submissions and add ONLY opted-in contacts to Brevo, or arrange a secure automation later.
+
+Before publishing, test the homepage popup, the Brevo subscription confirmation flow, and a Contact Us submission.
