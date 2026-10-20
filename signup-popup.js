@@ -39,7 +39,6 @@
     overlay = document.getElementById('orchard-signup');
     dialog = overlay.querySelector('.signup-dialog');
     document.getElementById('signup-close').addEventListener('click', dismiss);
-    document.getElementById('signup-dismiss').addEventListener('click', dismiss);
     overlay.addEventListener('click', event => { if (event.target === overlay) dismiss(); });
     const success = document.getElementById('success-message');
     if (success) new MutationObserver(() => {
@@ -47,7 +46,6 @@
         saveDays(365);
         // Leave confirmation visible inside the dismissible popup.
         document.getElementById('sib-container').hidden = true;
-        document.getElementById('signup-dismiss').hidden = true;
       }
     }).observe(success, { attributes: true, attributeFilter: ['style','class'] });
     // Brevo's script must load AFTER the form has been inserted.
