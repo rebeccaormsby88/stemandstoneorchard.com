@@ -447,3 +447,9 @@ h1 { margin: 10px 0 16px; color: white; font-size: clamp(46px, 6vw, 76px); max-w
 .journal-action {display:block;text-align:center;background:var(--forest);color:#fff;padding:12px;margin:0 24px;border-radius:8px;text-decoration:none;font-weight:700}
 .journal-sidebar .journal-side-link {margin-top:22px;margin-bottom:0;font-size:.85rem}
 @media(max-width:760px){.journal-layout{grid-template-columns:1fr;gap:20px;padding-top:30px}.journal-hero{padding:45px 0 38px}.journal-sidebar{max-width:500px}}
+
+/* Inline contact confirmation and fallback */
+.contact-result { max-width:650px;margin:24px auto;padding:30px;border:1px solid #b3c8b7;border-radius:12px;background:#f4f8f3;color:#173b28; }
+.contact-result h2 { margin-top:0; }
+.confirmation-fallback {max-width:680px;margin:10vh auto;padding:28px;}
+.signup-dialog #sib-container[hidden] {display:none !important;}
